@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var contador = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func doTapBoton(_ sender: Any) {
+        contador += 1
+        lblEtiqueta.text = "El botón se ha presionado \(contador) veces"
+    }
+    
 }
 
